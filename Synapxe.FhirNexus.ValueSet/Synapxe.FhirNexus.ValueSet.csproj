@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ProjectGuid>{0C7FD2F3-67D3-4703-97A5-847C2E66E3E4}</ProjectGuid>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+    </ItemGroup>
+    
+    <ItemGroup>
+    
+        <PackageReference Include="Ihis.FhirEngine.Data.SqlServer" Version="4.2.0-dev-24232.1" />
+        <PackageReference Include="Ihis.FhirEngine.Data.SqlServer.Extensions.Migration" Version="4.2.0-dev-24232.1" />
+        <PackageReference Include="Ihis.FhirEngine.Extensions.OpenTelemetry" Version="4.2.0-dev-24232.1" />
+        <PackageReference Include="Ihis.FhirEngine.WebApi.Extensions.AuditLogging.Serilog" Version="4.2.0-dev-24232.1" />
+        <PackageReference Include="Ihis.FhirEngine.WebApi.Extensions.Swashbuckle" Version="4.2.0-dev-24232.1" />
+        <PackageReference Include="Ihis.FhirEngine.WebApi.R5" Version="4.2.0-dev-24232.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <AdditionalFiles Include="Conformance/*.StructureDefinition.json" />
+    </ItemGroup>
+</Project>
