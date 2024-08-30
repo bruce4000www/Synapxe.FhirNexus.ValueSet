@@ -18,6 +18,8 @@
         <PackageReference Include="Ihis.FhirEngine.WebApi.Extensions.AuditLogging.Serilog" Version="4.2.0-dev-24232.1" />
         <PackageReference Include="Ihis.FhirEngine.WebApi.Extensions.Swashbuckle" Version="4.2.0-dev-24232.1" />
         <PackageReference Include="Ihis.FhirEngine.WebApi.R5" Version="4.2.0-dev-24232.1" />
+        <PackageReference Include="Ihis.FhirEngine.Data.TerminologyDataStore.R5" Version="4.2.0-dev-24232.1" />
+        <PackageReference Include="Ihis.FhirEngine.Data.Relational.SqlServer" Version="4.2.0-dev-24232.1" />
     </ItemGroup>
 
     <ItemGroup>

@@ -25,6 +25,17 @@
   },
   "Handlers": {
     "Repository": {
+      "FhirTerminologyDataStore": {
+        "CorrelationIdTagSystem": "http://ihis.sg/coding/correlationid",
+        "UseSqlRelationalModels": {
+          "AutoCreateTables": true
+        },
+        "ConnectionString": "TerminologyDb",
+        "BaseUrl": "http://health.sg/",
+        "SeedDataPaths": [
+          "seed-valuesets.json"
+        ]
+      },
       "FhirDataStore<@NoSql>": {
         "UseSqlDocument": {
           "EnableRetryOnFailure": true,
