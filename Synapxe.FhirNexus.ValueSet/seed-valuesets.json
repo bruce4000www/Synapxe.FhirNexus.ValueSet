@@ -7,118 +7,52 @@
   "type": "collection",
   "entry": [
     {
-      "fullUrl": "http://synapxe.sg/CodeSystem/hsg-residential-status",
+      "fullUrl": "http://synapxe.sg/CodeSystem/fhirnexus-appointment-category",
       "resource": {
         "resourceType": "CodeSystem",
-        "id": "hsg-residential-status",
-        "url": "http://synapxe.sg/CodeSystem/hsg-residential-status",
-        "version": "0.1.0",
-        "name": "Residential Status",
-        "title": "Residential Status",
+        "id": "fhirnexus-appointment-category",
+        "url": "http://synapxe.sg/CodeSystem/fhirnexus-appointment-category",
+        "version": "1.0.0",
+        "name": "FhirNexus appointment category",
+        "title": "FhirNexus appointment category",
         "status": "active",
-        "date": "2021-12-01",
+        "date": "2024-09-19",
         "publisher": "Synapxe",
-        "description": "HealthierSG Residential Status",
+        "description": "A code system created by FhirNexus team for demonstration purpose",
         "content": "not-present",
         "contact": [
           {
-            "name": "HSAR Team"
+            "name": "FhirNexus Team"
           }
         ],
-        "valueSet": "http://synapxe.sg/ValueSet/hsg-residential-status"
+        "valueSet": "http://synapxe.sg/ValueSet/fhirnexus-appointment-category"
       }
     },
     {
-      "fullUrl": "http://synapxe.sg/ValueSet/hsg-residential-status",
+      "fullUrl": "http://synapxe.sg/ValueSet/fhirnexus-appointment-category",
       "resource": {
         "resourceType": "ValueSet",
-        "id": "hsg-residential-status",
-        "url": "http://synapxe.sg/ValueSet/hsg-residential-status",
-        "version": "0.1.0",
-        "name": "hsg-residential-status",
-        "title": "hsg-residential-status",
+        "id": "fhirnexus-appointment-category",
+        "url": "http://synapxe.sg/ValueSet/fhirnexus-appointment-category",
+        "version": "1.0.0",
+        "name": "fhirnexus-appointment-category",
+        "title": "fhirnexus-appointment-category",
         "status": "active",
-        "date": "2021-12-01",
+        "date": "2024-09-19",
         "publisher": "Synapxe",
-        "description": "Residential Status",
+        "description": "A value set created by FhirNexus team to ensure appointment comply with predefined values",
         "compose": {
           "include": [
             {
-              "system": "http://synapxe.sg/CodeSystem/hsg-residential-status",
+              "system": "http://synapxe.sg/CodeSystem/fhirnexus-appointment-category",
               "concept": [
                 {
-                  "code": "C",
-                  "display": "Citizen"
+                  "code": "scheduled",
+                  "display": "Scheduled"
                 },
                 {
-                  "code": "P",
-                  "display": "Permanent Resident"
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    {
-      "fullUrl": "http://synapxe.sg/CodeSystem/hsg-organization-type",
-      "resource": {
-        "resourceType": "CodeSystem",
-        "id": "hsg-organization-type",
-        "url": "http://synapxe.sg/CodeSystem/hsg-organization-type",
-        "version": "0.1.0",
-        "name": "Organization Type",
-        "title": "Organization Type",
-        "status": "active",
-        "date": "2021-12-01",
-        "publisher": "Synapxe",
-        "description": "HealthierSG Organization Type",
-        "content": "not-present",
-        "contact": [
-          {
-            "name": "HSAR Team"
-          }
-        ],
-        "valueSet": "http://synapxe.sg/ValueSet/hsg-organization-type"
-      }
-    },
-    {
-      "fullUrl": "http://synapxe.sg/ValueSet/hsg-organization-type",
-      "resource": {
-        "resourceType": "ValueSet",
-        "id": "hsg-organization-type",
-        "url": "http://synapxe.sg/ValueSet/hsg-organization-type",
-        "version": "0.1.0",
-        "name": "hsg-organization-type",
-        "title": "hsg-organization-type",
-        "status": "active",
-        "date": "2021-12-01",
-        "publisher": "Synapxe",
-        "description": "Organization Type",
-        "compose": {
-          "include": [
-            {
-              "system": "http://synapxe.sg/CodeSystem/hsg-organization-type",
-              "concept": [
-                {
-                  "code": "gp",
-                  "display": "GP"
-                },
-                {
-                  "code": "poly",
-                  "display": "Poly"
-                },
-                {
-                  "code": "cluster",
-                  "display": "Cluster"
-                },
-                {
-                  "code": "pcn",
-                  "display": "PCN"
-                },
-                {
-                  "code": "others",
-                  "display": "Others"
+                  "code": "ad-hoc",
+                  "display": "Ad-hoc"
                 }
               ]
             }

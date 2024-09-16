@@ -1,4 +1,4 @@
-﻿{
+{
   "resourceType": "StructureDefinition",
   "id": "Appointment-custom",
   "extension": [
@@ -8,16 +8,16 @@
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-      "valueCode": "4.0.0"
+      "valueCode": "4.3.0"
     }
   ],
   "url": "http://sypnapxe.sg/fhir/StructureDefinition/Appointment-custom",
-  "version": "4.0.1",
+  "version": "4.3.0",
   "name": "Appointment-custom",
   "status": "active",
   "date": "2019-11-01T09:29:23+11:00",
   "publisher": "Synapxe Pte. Ltd.",
-  "fhirVersion": "4.0.1",
+  "fhirVersion": "4.3.0",
   "mapping": [
     {
       "identity": "v2",
@@ -46,8 +46,6 @@
         "id": "Appointment",
         "path": "Appointment",
         "definition": "The Custom appointment.",
-        "mustSupport": false,
-        "isModifier": false,
         "constraint": [
           {
             "key": "ihis-apt-1",
@@ -55,34 +53,50 @@
             "human": "If present, start SHALL have a higher value than current date time",
             "expression": "start.hasValue().not() or now() <= start"
           }
-        ]
+        ],
+        "mustSupport": false,
+        "isModifier": false
       },
       {
-        "id": "Appointment.cancellationReason",
-        "path": "Appointment.cancellationReason",
-        "min": 0,
-        "max": "1",
+        "id": "Appointment.serviceCategory",
+        "path": "Appointment.serviceCategory",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Appointment.serviceCategory.coding",
+        "path": "Appointment.serviceCategory.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Appointment.serviceCategory.coding.system",
+        "path": "Appointment.serviceCategory.coding.system",
+        "min": 1,
+        "fixedUri": "http://synapxe.sg/CodeSystem/fhirnexus-appointment-category"
+      },
+      {
+        "id": "Appointment.serviceCategory.coding.code",
+        "path": "Appointment.serviceCategory.coding.code",
+        "min": 1,
         "binding": {
           "strength": "required",
-          "valueSet": "http://sypnapxe.sg/fhir/ValueSet/appointmentCancellationReason"
+          "valueSet": "http://synapxe.sg/ValueSet/fhirnexus-appointment-category"
         }
       },
       {
         "id": "Appointment.serviceType",
         "path": "Appointment.serviceType",
-        "min": 0,
         "max": "0"
       },
       {
         "id": "Appointment.supportingInformation",
         "path": "Appointment.supportingInformation",
-        "min": 0,
         "max": "0"
       },
       {
         "id": "Appointment.participant.period",
         "path": "Appointment.participant.period",
-        "min": 0,
         "max": "0"
       }
     ]

@@ -134,7 +134,7 @@
               "definition": "http://sypnapxe.sg/fhir/OperationDefinition/Appointment-move-appointment-date"
             }
           ]
-        },
+        }
       ]
     }
   ]
